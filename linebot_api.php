@@ -33,6 +33,15 @@ foreach ($request_json['events'] as $event)
 		   
 		   $reply_message = $result;
 		   $reply_message = 'ติดเชื้อสะสม '. $obj->{'Confirmed'};
+				
+		   $reply_message = $result;
+		   $reply_message = 'หายแล้ว '. $obj->{'Recovered'}.'คน';
+		   
+		   $reply_message = $result;
+		   $reply_message = 'กำลังรักษา '. $obj->{'Hospitalized'}.'คน';
+			   
+		   $reply_message = $result;
+		   $reply_message = 'ตาย '. $obj->{'Deaths'}.'คน';
 	   }
 			
 			if($text == "@bot ทำอะไรอยู่"){

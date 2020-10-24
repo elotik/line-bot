@@ -35,13 +35,13 @@ foreach ($request_json['events'] as $event)
 		   $reply_message = "ติดเชื้อสะสม ". $obj->{'Confirmed'}." คน";
 		   $reply_message .= "\r\nหายแล้ว ". $obj->{'Recovered'}." คน";
 	           $reply_message .= "\r\nกำลังรักษา ". $obj->{'Hospitalized'}." คน";
-		   $reply_message .= "\r\nตาย ". $obj->{'Deaths'}."คน";
+		   $reply_message .= "\r\nตาย ". $obj->{'Deaths'}." คน";
 	   }
 			
 			if($text == "@bot ทำอะไรอยู่"){
 					$reply_message = "ยุ่งอยู่ไม่ว่างค่อยติดต่อกลับมาใหม่แค่นี้นะ ตู๊ด..ตู๊ด..ตู๊ด !!";
 				}
-			if($text == "@bot แย้อ้วน"){
+			if($text == "แย้อ้วน"){
 					$reply_message = "ก็ไอคนที่ชอบคิดว่าตัวเองสวยไงหลงตัวเองตลอดเวลานั้นละคนนั้นแหละ\r\nที่ชื่อว่าอะไรนะ...หมูติ๊ก หมูติ๊ก อะไรเนี้ยแหละ";
 				}
 			if($txts[0] == "@บอท"){

@@ -1,7 +1,6 @@
 <?php
 
-$channelAccessToken = 'P7HCr/hxKdGwFU1BmEoXYPTFzWytQgX8rMr2sXxcR9H1BV21DM6ikWxr9lGPGq4Synktwhwh/ZocsJFeXrPKUVlxqmuqce9VRQ+lWkOTS61fInI3i1DASGD00Be2Ckw2y+QTbIRRpBi1r580q6w0rAdB04t89/1O/w1cDnyilFU=
-'; // Access Token ค่าที่เราสร้างขึ้น
+$channelAccessToken = 'P7HCr/hxKdGwFU1BmEoXYPTFzWytQgX8rMr2sXxcR9H1BV21DM6ikWxr9lGPGq4Synktwhwh/ZocsJFeXrPKUVlxqmuqce9VRQ+lWkOTS61fInI3i1DASGD00Be2Ckw2y+QTbIRRpBi1r580q6w0rAdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
 
 $request = file_get_contents('php://input');   // Get request content
 
@@ -19,8 +18,8 @@ foreach ($request_json['events'] as $event)
 			
 			$txts = explode(" ", $text);
 			
-			if($text == "@bot ไล่มงคลออก !!"){
-					$reply_message = "ไม่สามารถดำเนินการได้ในขณะนี้";
+			if($text == "@bot ทำอะไรอยู่"){
+					$reply_message = "ยุ่งอยู่ไม่ว่างค่อยติดต่อกลับมาใหม่แค่นี้นะ ตู๊ด..ตู๊ด..ตู๊ด !!";
 				}
 			
 			if($txts[0] == "@บอท"){
